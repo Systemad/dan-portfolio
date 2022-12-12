@@ -51,7 +51,7 @@ export const projects: Project[] = [
     },
     {
         title: "FormulaBlazor",
-        description: "Formula 1 app that fetches displays information about Formula 1. Data is by Ergast and Wikipedia",
+        description: "Formula 1 app that fetches displays information about Formula 1",
         imageUrl: "/assets/terminal-website.jpg",
         stack: [
             {
