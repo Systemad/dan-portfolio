@@ -24,6 +24,8 @@ import {
     Tag,
     TagLabel,
     HStack,
+    LinkBox,
+    LinkOverlay,
 } from "@chakra-ui/react"
 import React from "react"
 import { Project } from "../data/portfolio"
@@ -72,7 +74,11 @@ export const PortfolioItem = ({ project }: Props) => {
                         ))}
 
                         <Spacer />
-                        <Button>GitHub</Button>
+                        <LinkBox>
+                            <LinkOverlay href={project.link} isExternal>
+                                <Button>GitHub</Button>
+                            </LinkOverlay>
+                        </LinkBox>
                     </HStack>
                 </Flex>
             </CardFooter>
