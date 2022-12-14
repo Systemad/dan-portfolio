@@ -2,7 +2,8 @@ import React from "react"
 import Footer from "./components/Footer"
 import Intro from "./components/Intro"
 import Portfolio from "./components/Portfolio"
-import { Container, useColorMode } from "@chakra-ui/react"
+import { Container, useColorMode, Box, Flex } from "@chakra-ui/react"
+import { Navigationbar } from "./components/NavigationBar"
 
 function App() {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -43,18 +44,12 @@ function App() {
 
     return (
         <>
-            <button
-                type="button"
-                onClick={toggleColorMode}
-                className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
-            >
-                Toggle {colorMode === "dark" ? sun : moon}
-            </button>
-            <Container maxW={"5xl"}>
+            <Flex direction="column" flex="1">
+                <Navigationbar />
                 <Intro />
                 <Portfolio />
                 <Footer />
-            </Container>
+            </Flex>
         </>
     )
 }

@@ -4,7 +4,7 @@ import { Center, Heading, VStack, Text, Highlight } from "@chakra-ui/react"
 
 const Intro = () => {
     return (
-        <Center mb="6">
+        <Center mt="6" mb="6">
             <VStack>
                 <Heading as="h1" size="2xl">
                     Dan

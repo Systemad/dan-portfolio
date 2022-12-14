@@ -1,6 +1,11 @@
 import { chakra, HTMLChakraProps } from "@chakra-ui/react"
 import React from "react"
 
+/*
+    - FIX LOGOS
+    - ADD LINKS IN FOOTER
+    - ADD TAGS TO CARDS   
+*/
 export const Logo = (props: HTMLChakraProps<"svg">) => (
     <chakra.svg
         color="accent"
