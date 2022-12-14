@@ -1,32 +1,11 @@
-import React, { useEffect, useState } from "react"
-import Contact from "./components/Contact"
+import React from "react"
 import Footer from "./components/Footer"
 import Intro from "./components/Intro"
 import Portfolio from "./components/Portfolio"
+import { Container, useColorMode } from "@chakra-ui/react"
 
 function App() {
-    const [theme, setTheme] = useState<string | null>("light")
-
-    /*
-    useEffect(() => {
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            setTheme("dark")
-        } else {
-            setTheme("light")
-        }
-    }, [])
-    */
-    const handleThemeSwitch = () => {
-        setTheme(theme === "dark" ? "light" : "dark")
-    }
-
-    useEffect(() => {
-        if (theme === "dark") {
-            document.documentElement.classList.add("dark")
-        } else {
-            document.documentElement.classList.remove("dark")
-        }
-    }, [theme])
+    const { colorMode, toggleColorMode } = useColorMode()
 
     const sun = (
         <svg
@@ -66,18 +45,16 @@ function App() {
         <>
             <button
                 type="button"
-                onClick={handleThemeSwitch}
+                onClick={toggleColorMode}
                 className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
             >
-                {theme === "dark" ? sun : moon}
+                Toggle {colorMode === "dark" ? sun : moon}
             </button>
-            <div className="bg-slate-100 dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-                <div className="max-w-5xl w-11/12 mx-auto">
-                    <Intro />
-                    <Portfolio />
-                    <Footer />
-                </div>
-            </div>
+            <Container maxW={"5xl"}>
+                <Intro />
+                <Portfolio />
+                <Footer />
+            </Container>
         </>
     )
 }

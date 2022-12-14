@@ -1,18 +1,34 @@
 import React from "react"
 
+import { Center, Heading, VStack, Text, Highlight } from "@chakra-ui/react"
+
 const Intro = () => {
     return (
-        <div className="flex items-center justify-center flex-col text-center pt-10 pb-4">
-            <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">
-                Dan
-            </h1>
-            <p className="text-base md:text-xl font-medium">.NET Developer</p>
-            <p className="text-sm max-w-xl font-bold">
-                Work in progress, it is being updated continually.
-                <br />
-                This does not include unfished projects.
-            </p>
-        </div>
+        <Center mb="6">
+            <VStack>
+                <Heading as="h1" size="2xl">
+                    Dan
+                </Heading>
+                <Text fontSize={"2xl"}>
+                    <Highlight
+                        query=".NET"
+                        styles={{
+                            px: "2",
+                            py: "1",
+                            rounded: "lg",
+                            bg: "blue.100",
+                        }}
+                    >
+                        .NET Developer
+                    </Highlight>
+                </Text>
+                <Text fontSize={"lg"}>
+                    Work in progress, it is being updated continually.
+                    <br />
+                    This does not include unfished projects.
+                </Text>
+            </VStack>
+        </Center>
     )
 }
 
