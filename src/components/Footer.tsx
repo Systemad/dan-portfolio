@@ -16,27 +16,21 @@ const Footer = () => {
         <Center>
             <Stack spacing={{ base: "4", md: "5" }} mt="2rem">
                 <Stack justify="center" direction="row" align="center">
-                    <Icon viewBox="0 0 200 200" color="red.500">
-                        <path fill="currentColor" d="" />
-                    </Icon>
+                    <Logo />
                     <ButtonGroup variant="ghost">
                         <IconButton
                             as="a"
-                            href="#"
+                            href="https://www.linkedin.com/in/dan-elf-a538b51a2/"
+                            target="_blank"
                             aria-label="LinkedIn"
                             icon={<FaLinkedin fontSize="1.25rem" />}
                         />
                         <IconButton
                             as="a"
-                            href="#"
+                            href="https://github.com/Systemad/"
+                            target="_blank"
                             aria-label="GitHub"
                             icon={<FaGithub fontSize="1.25rem" />}
-                        />
-                        <IconButton
-                            as="a"
-                            href="#"
-                            aria-label="Twitter"
-                            icon={<FaTwitter fontSize="1.25rem" />}
                         />
                     </ButtonGroup>
                 </Stack>
