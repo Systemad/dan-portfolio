@@ -26,7 +26,12 @@ export const projects: Project[] = [
             {
                 name: "React",
                 language: "TypeScript, HTML, CSS",
-                technologies: ["Redux", "ChakraUI"],
+                technologies: ["Redux Toolkit", "ChakraUI"],
+            },
+            {
+                name: "Swagger",
+                language: "JSON",
+                technologies: ["Swagger, NSwag"],
             },
         ],
         link: "https://github.com/Systemad/Playground",
@@ -49,10 +54,10 @@ export const projects: Project[] = [
         ],
         link: "https://github.com/Systemad/FormulaBlazor",
     },
-        {
+    {
         title: "Chat application",
         description: "Fullstack discord like, chat application",
-        imageUrl: "/assets/terminal-website.jpg",
+        imageUrl: "assets/soon.png",
         stack: [
             {
                 name: ".NET",
@@ -62,9 +67,37 @@ export const projects: Project[] = [
             {
                 name: "React",
                 language: "TypeScript",
-                technologies: ["Redux", "ChakraUI"],
+                technologies: ["Redux Toolkit (Query)", "ChakraUI"],
+            },
+            {
+                name: "Swagger",
+                language: "JSON",
+                technologies: ["Swagger, NSwag"],
             },
         ],
-        link: "githublink",
+        link: "https://github.com/Systemad/Dovecord-React",
+    },
+    {
+        title: "shorting",
+        description: "URL Short application made in .NET and Blazor",
+        imageUrl: "assets/soon.png",
+        stack: [
+            {
+                name: ".NET",
+                language: "C#",
+                technologies: ["ASP.NET", "Entity Framework", "SignalR, Orleans"],
+            },
+            {
+                name: "Orleans",
+                language: "C#",
+                technologies: [],
+            },
+            {
+                name: "Mudblazor",
+                language: "",
+                technologies: [],
+            },
+        ],
+        link: "https://github.com/Systemad/shorting",
     },
 ]

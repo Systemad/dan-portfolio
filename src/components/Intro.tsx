@@ -19,13 +19,13 @@ const Intro = () => {
                             bg: "blue.100",
                         }}
                     >
-                        .NET Developer
+                        Fullstack & .NET Developer
                     </Highlight>
                 </Text>
                 <Text fontSize={"lg"}>
                     Work in progress, it is being updated continually.
                     <br />
-                    This does not include unfished projects.
+                    This also includes unfished projects.
                 </Text>
             </VStack>
         </Center>
