@@ -88,6 +88,11 @@ export const projects: Project[] = [
                 technologies: ["ASP.NET", "Entity Framework", "SignalR, Orleans"],
             },
             {
+                name: "Docker",
+                language: "",
+                technologies: [],
+            },
+            {
                 name: "Orleans",
                 language: "C#",
                 technologies: [],
