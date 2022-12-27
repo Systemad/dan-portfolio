@@ -56,7 +56,7 @@ export const projects: Project[] = [
     },
     {
         title: "shorting",
-        description: "URL Shortener application made in Blazor powered .NET 7. It used MudBlazor component library for material design UI and Orleans with the goal for scalability.",
+        description: "URL Shortener application made in Blazor powered by .NET 7, and Orleans with the goal for scalability. The UI is made in Material Design by MudBlazor component library.",
         imageUrl: "https://raw.githubusercontent.com/Systemad/shorting/main/img/index.png",
         stack: [
             {
