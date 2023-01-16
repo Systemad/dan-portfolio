@@ -1,6 +1,6 @@
 export interface Project {
     title: string
-    description: string,
+    description: string
     imageUrl: string
     stack: Stack[]
     link: string
@@ -14,9 +14,35 @@ interface Stack {
 
 export const projects: Project[] = [
     {
+        title: "Shopping",
+        description: `Fullstack general e-commerce website built with latest technologies, React 18 and Redux toolkit.
+            Powered by .NET 7 and Orleans. Includes authentication and easy admin portal for management.`,
+        imageUrl: "assets/soon.png",
+        stack: [
+            {
+                name: ".NET",
+                language: "C#",
+                technologies: ["ASP.NET", "Orleans"],
+            },
+            {
+                name: "React",
+                language: "TypeScript, HTML, CSS",
+                technologies: ["Redux Toolkit", "Mantine"],
+            },
+            {
+                name: "Swagger",
+                language: "JSON",
+                technologies: ["Swagger, NSwag"],
+            },
+        ],
+        link: "https://github.com/Systemad/shopping",
+    },
+    {
         title: "Playground",
-        description: "Fullstack multiplayer Quiz application made in React 18 with ChakraUI, Redux and .NET 6 powered backend with ASP.NET Core API and Orleans.",
-        imageUrl: "https://raw.githubusercontent.com/Systemad/Playground/main/assets/screenshots/quizoverview.png",
+        description:
+            "Fullstack multiplayer Quiz application made in React 18 with ChakraUI, Redux and .NET 6 powered backend with ASP.NET Core API and Orleans.",
+        imageUrl:
+            "https://raw.githubusercontent.com/Systemad/Playground/main/assets/screenshots/quizoverview.png",
         stack: [
             {
                 name: ".NET",
@@ -38,8 +64,10 @@ export const projects: Project[] = [
     },
     {
         title: "Formula Blazor",
-        description: "Blazor app made with .NET 7 and Mudblazor that fetches certain information about Formula 1, such as drivers, teams, standings and calendar.",
-        imageUrl: "https://raw.githubusercontent.com/Systemad/FormulaBlazor/main/assets/index.jpg",
+        description:
+            "Blazor app made with .NET 7 and Mudblazor that fetches certain information about Formula 1, such as drivers, teams, standings and calendar.",
+        imageUrl:
+            "https://raw.githubusercontent.com/Systemad/FormulaBlazor/main/assets/index.jpg",
         stack: [
             {
                 name: ".NET",
@@ -56,13 +84,19 @@ export const projects: Project[] = [
     },
     {
         title: "shorting",
-        description: "URL Shortener application made in Blazor powered by .NET 7, and Orleans with the goal for scalability. The UI is made in Material Design by MudBlazor component library.",
-        imageUrl: "https://raw.githubusercontent.com/Systemad/shorting/main/img/index.png",
+        description:
+            "URL Shortener application made in Blazor powered by .NET 7, and Orleans with the goal for scalability. The UI is made in Material Design by MudBlazor component library.",
+        imageUrl:
+            "https://raw.githubusercontent.com/Systemad/shorting/main/img/index.png",
         stack: [
             {
                 name: ".NET",
                 language: "C#",
-                technologies: ["ASP.NET", "Entity Framework", "SignalR, Orleans"],
+                technologies: [
+                    "ASP.NET",
+                    "Entity Framework",
+                    "SignalR, Orleans",
+                ],
             },
             {
                 name: "Docker",
