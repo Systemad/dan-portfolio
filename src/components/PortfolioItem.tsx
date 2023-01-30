@@ -32,8 +32,15 @@ type Props = {
 
 export const PortfolioItem = ({ project }: Props) => {
   return (
-    <Card overflow="hidden" shadow={"lg"} rounded={"2xl"} direction={{ base: "column", sm: "row" }}>
-      <Image objectFit="cover" maxW={{ base: "100%", sm: "200px" }} borderRadius="lg" src={project.imageUrl} />
+    <Card
+      bgColor={"#f6f6f7"}
+      _dark={{ backgroundColor: "#252529" }}
+      overflow="hidden"
+      shadow={"xl"}
+      rounded={"2xl"}
+      direction={{ base: "column", sm: "row" }}
+    >
+      <Image objectFit="cover" maxW={{ base: "100%", sm: "200px" }} src={project.imageUrl} />
       <Stack>
         <CardBody>
           <Stack mt="6" spacing="3">
@@ -49,7 +56,7 @@ export const PortfolioItem = ({ project }: Props) => {
                 {project.stack.map((item) => (
                   <Popover trigger="hover">
                     <PopoverTrigger>
-                      <Tag size="lg" bgColor={"#f6cbd1"} borderRadius="full">
+                      <Tag size="lg" borderRadius="full">
                         <TagLabel>{item.name}</TagLabel>
                       </Tag>
                     </PopoverTrigger>
@@ -71,9 +78,7 @@ export const PortfolioItem = ({ project }: Props) => {
             <ButtonGroup gap="2" justifyContent={"flex-end"}>
               <LinkBox justifyContent={"flex-end"}>
                 <LinkOverlay href={project.link} isExternal>
-                  <Button bgColor={"#d1c1d7"} _hover={{ bgColor: "#ac8fb7" }} borderRadius={"full"}>
-                    GitHub
-                  </Button>
+                  <Button borderRadius={"full"}>GitHub</Button>
                 </LinkOverlay>
               </LinkBox>
             </ButtonGroup>

@@ -16,13 +16,13 @@ const Intro = () => {
               px: "2",
               py: "1",
               rounded: "lg",
-              bg: "blue.100",
+              bg: "teal.300",
             }}
           >
-            .NET & Fullstack Fullstack
+            .NET & Fullstack Developer
           </Highlight>
         </Text>
-        <Text fontSize={"lg"}>
+        <Text fontSize={"lg"} textAlign={"center"}>
           Work in progress, it is being updated continually.
           <br />
           This also includes unfished projects.
