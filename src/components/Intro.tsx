@@ -25,7 +25,7 @@ const Intro = () => {
         <Text fontSize={"lg"} textAlign={"center"}>
           Work in progress, it is being updated continually.
           <br />
-          This also includes unfished projects.
+          This also includes unfinished projects.
         </Text>
       </VStack>
     </Center>
