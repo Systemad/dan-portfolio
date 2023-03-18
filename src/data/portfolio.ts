@@ -14,18 +14,28 @@ interface Stack {
 
 export const projects: Project[] = [
   {
-    title: "GameWatch",
-    description: `Fullstack Blazor app to view information about games.
-      You can post blogs reviewing games and sign up for game releases and get notified once a game releases.`,
-    imageUrl: "assets/soon.png",
+    title: "Playground",
+    description:
+      "Fullstack multiplayer Quiz application made in React 18 with ChakraUI, Redux and .NET 6 powered backend with ASP.NET Core API and Orleans.",
+    imageUrl: "https://raw.githubusercontent.com/Systemad/Playground/main/assets/screenshots/quizoverview.png",
     stack: [
       {
         name: ".NET",
         language: "C#",
-        technologies: ["ASP.NET", "Blazor", "Azure"],
+        technologies: ["ASP.NET", "Orleans", "SignalR"],
+      },
+      {
+        name: "React",
+        language: "TypeScript, HTML, CSS",
+        technologies: ["Redux Toolkit", "ChakraUI"],
+      },
+      {
+        name: "Swagger",
+        language: "JSON",
+        technologies: ["Swagger, NSwag"],
       },
     ],
-    link: "https://github.com/Systemad/shopping",
+    link: "https://github.com/Systemad/Playground",
   },
   {
     title: "Shopping",
@@ -50,30 +60,6 @@ export const projects: Project[] = [
       },
     ],
     link: "https://github.com/Systemad/shopping",
-  },
-  {
-    title: "Playground",
-    description:
-      "Fullstack multiplayer Quiz application made in React 18 with ChakraUI, Redux and .NET 6 powered backend with ASP.NET Core API and Orleans.",
-    imageUrl: "https://raw.githubusercontent.com/Systemad/Playground/main/assets/screenshots/quizoverview.png",
-    stack: [
-      {
-        name: ".NET",
-        language: "C#",
-        technologies: ["ASP.NET", "Orleans", "SignalR"],
-      },
-      {
-        name: "React",
-        language: "TypeScript, HTML, CSS",
-        technologies: ["Redux Toolkit", "ChakraUI"],
-      },
-      {
-        name: "Swagger",
-        language: "JSON",
-        technologies: ["Swagger, NSwag"],
-      },
-    ],
-    link: "https://github.com/Systemad/Playground",
   },
   {
     title: "Formula Blazor",
@@ -122,6 +108,20 @@ export const projects: Project[] = [
       },
     ],
     link: "https://github.com/Systemad/shorting",
+  },
+  {
+    title: "GameWatch",
+    description: `Fullstack Blazor app to view information about games.
+      You can post blogs reviewing games and sign up for game releases and get notified once a game releases.`,
+    imageUrl: "assets/soon.png",
+    stack: [
+      {
+        name: ".NET",
+        language: "C#",
+        technologies: ["ASP.NET", "Blazor", "Azure"],
+      },
+    ],
+    link: "https://github.com/Systemad/shopping",
   },
   {
     title: "Chat application",

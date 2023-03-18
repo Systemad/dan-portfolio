@@ -13,10 +13,12 @@ const Intro = () => {
           <Highlight
             query=".NET"
             styles={{
-              px: "2",
+              px: "5",
               py: "1",
-              rounded: "lg",
-              bg: "teal.300",
+              rounded: "full",
+              color: "white",
+              bg: "#009688",
+              _dark: { color: "black", bg: "#80cbc4" },
             }}
           >
             .NET & Fullstack Developer

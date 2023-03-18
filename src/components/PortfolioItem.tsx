@@ -33,10 +33,10 @@ type Props = {
 export const PortfolioItem = ({ project }: Props) => {
   return (
     <Card
-      bgColor={"#f6f6f7"}
-      _dark={{ backgroundColor: "#252529" }}
+      bgColor={"#f8fafd"}
+      _dark={{ backgroundColor: "#28292a" }}
       overflow="hidden"
-      shadow={"xl"}
+      shadow={"none"}
       rounded={"2xl"}
       direction={{ base: "column", sm: "row" }}
     >
