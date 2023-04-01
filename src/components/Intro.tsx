@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Center, Heading, VStack, Text, Highlight } from "@chakra-ui/react";
+import { Center, Heading, VStack, Text, Highlight, Link } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Intro = () => {
   return (
@@ -25,9 +26,12 @@ const Intro = () => {
           </Highlight>
         </Text>
         <Text fontSize={"lg"} textAlign={"center"}>
-          Work in progress, it is being updated continually.
+          Below are personal projects of mine
           <br />
-          This also includes unfinished projects.
+          Also be sure to checkout my&nbsp;
+          <Link href="https://blog.danova.me/" isExternal>
+            blog <ExternalLinkIcon mx="2px" />
+          </Link>
         </Text>
       </VStack>
     </Center>
